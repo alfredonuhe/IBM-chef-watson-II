@@ -8,13 +8,15 @@
           alimento
           alinyo
           especia- ingrediente
+          paso
+          orden
           ensalada - object)
-
-(:predicates (pertenece_a ?i - ingrediente ?s - ensalada)
-             (paso_ensalada ?s - ensalada ?p - paso ?o - orden)
-             (paso_ingrediente ?s - ensalada ?p - paso ?i - ingrediente)
-             (full ?s - store)
-             (in_sun ?w - waypoint)
+(:constants cero - orden)
+(:predicates 
+             (paso_ensalada ?s - ensalada ?p - paso)
+             (datos_paso ?p - paso ?i - ingrediente ?o - orden)
+             (paso-actual ?p -paso)
+             (paso-sig ?p1 - paso ?p2 - paso)
 )
 
 (:functions (coste-ensalada))
