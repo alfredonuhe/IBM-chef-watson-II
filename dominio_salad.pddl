@@ -58,34 +58,7 @@
         (when (not (= ?c0 ?c3)) (and (not (paso_actual ?c0)) (paso_actual ?c1))))
 )
 
-(:action ingrediente_intercambiado-carne
-:parameters (?s0 ?s1 - ensalada ?i0 ?i1 - ingrediente ?p0 - paso ?c0 ?c1 ?c2 ?c3 - contador ?t0 - tipo)
-:precondition   (and (ensalada_actual ?s0) (paso_actual ?c0) (sig_cont ?c0 ?c1) (hecho_paso_ensalada ?s1 ?i0 ?p0 ?c2) (peticion_ingrediente ?i1) 
-                (not (ingrediente_asignado ?s0 ?i0)) (not (ingrediente_asignado ?s0 ?i1)) (tipo_ingrediente ?i0 ?t0) (tipo_ingrediente ?i1 ?t0) (peticion_pasos_ensalada ?s0 ?c3) (fase uno))
-:effect (and (ingrediente_asignado ?s0 ?i1) (hecho_paso_ensalada ?s0 ?i0 ?p0 ?c0) (increase (totalcost) 5)
-        (when (and (= ?c0 ?c3)) (and (not (ensalada_actual ?s0)) (ensalada_procesada ?s0) (not (paso_actual ?c0)) (not (fase uno)) (fase cero)))
-        (when (not (= ?c0 ?c3)) (and (not (paso_actual ?c0)) (paso_actual ?c1))))
-)
-
-(:action ingrediente_intercambiado-pescado
-:parameters (?s0 ?s1 - ensalada ?i0 ?i1 - ingrediente ?p0 - paso ?c0 ?c1 ?c2 ?c3 - contador ?t0 - carne)
-:precondition   (and (ensalada_actual ?s0) (paso_actual ?c0) (sig_cont ?c0 ?c1) (hecho_paso_ensalada ?s1 ?i0 ?p0 ?c2) (peticion_ingrediente ?i1) 
-                (not (ingrediente_asignado ?s0 ?i0)) (not (ingrediente_asignado ?s0 ?i1)) (tipo_ingrediente ?i0 ?t0) (tipo_ingrediente ?i1 ?t0) (peticion_pasos_ensalada ?s0 ?c3) (fase uno))
-:effect (and (ingrediente_asignado ?s0 ?i1) (hecho_paso_ensalada ?s0 ?i0 ?p0 ?c0) (increase (totalcost) 5)
-        (when (and (= ?c0 ?c3)) (and (not (ensalada_actual ?s0)) (ensalada_procesada ?s0) (not (paso_actual ?c0)) (not (fase uno)) (fase cero)))
-        (when (not (= ?c0 ?c3)) (and (not (paso_actual ?c0)) (paso_actual ?c1))))
-)
-
-(:action ingrediente_intercambiado-fruta
-:parameters (?s0 ?s1 - ensalada ?i0 ?i1 - ingrediente ?p0 - paso ?c0 ?c1 ?c2 ?c3 - contador ?t0 - tipo)
-:precondition   (and (ensalada_actual ?s0) (paso_actual ?c0) (sig_cont ?c0 ?c1) (hecho_paso_ensalada ?s1 ?i0 ?p0 ?c2) (peticion_ingrediente ?i1) 
-                (not (ingrediente_asignado ?s0 ?i0)) (not (ingrediente_asignado ?s0 ?i1)) (tipo_ingrediente ?i0 ?t0) (tipo_ingrediente ?i1 ?t0) (peticion_pasos_ensalada ?s0 ?c3) (fase uno))
-:effect (and (ingrediente_asignado ?s0 ?i1) (hecho_paso_ensalada ?s0 ?i0 ?p0 ?c0) (increase (totalcost) 5)
-        (when (and (= ?c0 ?c3)) (and (not (ensalada_actual ?s0)) (ensalada_procesada ?s0) (not (paso_actual ?c0)) (not (fase uno)) (fase cero)))
-        (when (not (= ?c0 ?c3)) (and (not (paso_actual ?c0)) (paso_actual ?c1))))
-)
-
-(:action ingrediente_intercambiado-hortaliza
+(:action ingrediente_intercambiado
 :parameters (?s0 ?s1 - ensalada ?i0 ?i1 - ingrediente ?p0 - paso ?c0 ?c1 ?c2 ?c3 - contador ?t0 - tipo)
 :precondition   (and (ensalada_actual ?s0) (paso_actual ?c0) (sig_cont ?c0 ?c1) (hecho_paso_ensalada ?s1 ?i0 ?p0 ?c2) (peticion_ingrediente ?i1) 
                 (not (ingrediente_asignado ?s0 ?i0)) (not (ingrediente_asignado ?s0 ?i1)) (tipo_ingrediente ?i0 ?t0) (tipo_ingrediente ?i1 ?t0) (peticion_pasos_ensalada ?s0 ?c3) (fase uno))
