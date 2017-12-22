@@ -1,5 +1,5 @@
 ;prueba la ejecucuión de la regla ingrediente_aleatorio
-(define (problem p1)
+(define (problem p3)
 (:domain Salads)
 (:objects
 	cortar vertir anyadir rallar - paso
@@ -7,14 +7,12 @@
 	jamon pollo cordero chorizo - carne
 	atun pulpo gambas bacalao - pescado
 	melon manzana fresa aceitunas uva - fruta
-	lechuga tomate pan patata trufa calabacin pepino- hortaliza
+	lechuga tomate patata trufa calabacin pepino- hortaliza
 )
 (:init
-    (hecho_ensalada s0)
     (hecho_paso_ensalada s0 jamon cortar cero)
     (hecho_paso_ensalada s0 melon cortar uno)
     (hecho_paso_ensalada s0 manzana vertir dos)
-    (hecho_ensalada s1)
     (hecho_paso_ensalada s1 gambas cortar cero)
     (hecho_paso_ensalada s1 aceitunas anyadir uno)
     (hecho_paso_ensalada s1 atun anyadir dos)

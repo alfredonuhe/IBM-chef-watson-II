@@ -1,6 +1,6 @@
 ;prueba que se añaden ensaladas nuevas
 ;con un ingrediente nuevo
-(define (problem p1)
+(define (problem p4)
 (:domain Salads)
 (:objects
 	cortar vertir anyadir rallar - paso
@@ -8,14 +8,12 @@
 	jamon pollo cordero - carne
 	atun pulpo gambas - pescado
 	melon manzana fresa aceitunas - fruta
-	lechuga tomate pan patata - hortaliza
+	lechuga tomate patata - hortaliza
 )
 (:init
-    (hecho_ensalada s0)
     (hecho_paso_ensalada s0 jamon cortar cero)
     (hecho_paso_ensalada s0 melon cortar uno)
     (hecho_paso_ensalada s0 manzana vertir dos)
-    (hecho_ensalada s1)
     (hecho_paso_ensalada s1 lechuga cortar cero)
     (hecho_paso_ensalada s1 aceitunas anyadir uno)
     (hecho_paso_ensalada s1 atun anyadir dos)

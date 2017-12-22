@@ -1,5 +1,5 @@
-;prueba la ejecucuión de la regla ingrediente_aleatorio e ingrediente_existente
-(define (problem p6)
+;prueba la ejecucuión de la regla ingrediente_existente, ingrediente_intercambiado e ingrediente_aleatorio
+(define (problem p8)
 (:domain Salads)
 (:objects
 	cortar vertir anyadir rallar - paso
@@ -13,7 +13,7 @@
     (hecho_paso_ensalada s0 jamon cortar cero)
     (hecho_paso_ensalada s0 melon cortar uno)
     (hecho_paso_ensalada s0 manzana vertir dos)
-    (hecho_paso_ensalada s0 patata cortar tres)
+    (hecho_paso_ensalada s0 bacalao cortar tres)
     (hecho_paso_ensalada s1 gambas cortar cero)
     (hecho_paso_ensalada s1 aceitunas anyadir uno)
     (hecho_paso_ensalada s1 atun anyadir dos)
@@ -24,7 +24,8 @@
     (peticion_ensalada s3)
     (peticion_pasos_ensalada s3 cuatro)
     (peticion_ingrediente jamon)
-    (peticion_ingrediente melon)
+    (peticion_ingrediente chorizo)
+    (peticion_ingrediente uva)
     (ensaladas_por_generar dos)
     
     (sig_cont cero uno)

@@ -1,5 +1,5 @@
-;prueba la ejecucuión de la regla ingrediente_aleatorio e ingrediente_existente
-(define (problem p6)
+;prueba la ejecucuión de la regla ingrediente_existente e ingrediente intercambiado
+(define (problem p7)
 (:domain Salads)
 (:objects
 	cortar vertir anyadir rallar - paso
@@ -25,6 +25,8 @@
     (peticion_pasos_ensalada s3 cuatro)
     (peticion_ingrediente jamon)
     (peticion_ingrediente melon)
+    (peticion_ingrediente pepino)
+    (peticion_ingrediente uva)
     (ensaladas_por_generar dos)
     
     (sig_cont cero uno)

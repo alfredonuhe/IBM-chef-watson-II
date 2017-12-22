@@ -7,32 +7,28 @@
 	jamon pollo cordero - carne
 	atun pulpo gambas - pescado
 	melon manzana fresa aceitunas - fruta
-	lechuga tomate pan patata - hortaliza
+	lechuga tomate patata - hortaliza
 )
 (:init
-    (hecho_ensalada s0)
     (hecho_paso_ensalada s0 jamon cortar cero)
     (hecho_paso_ensalada s0 melon cortar uno)
     (hecho_paso_ensalada s0 manzana vertir dos)
-    (hecho_ensalada s1)
     (hecho_paso_ensalada s1 lechuga cortar cero)
     (hecho_paso_ensalada s1 aceitunas anyadir uno)
     (hecho_paso_ensalada s1 atun anyadir dos)
     (hecho_paso_ensalada s1 pulpo anyadir tres)
     
     (peticion_ensalada s2)
-    (peticion_pasos_ensalada s2 cuatro)
+    (peticion_pasos_ensalada s2 tres)
     (peticion_ensalada s3)
     (peticion_pasos_ensalada s3 tres)
     (peticion_ensalada s4)
-    (peticion_pasos_ensalada s4 tres)
-    (peticion_ensalada s5)
-    (peticion_pasos_ensalada s5 dos)
+    (peticion_pasos_ensalada s4 dos)
     (peticion_ingrediente jamon)
     (peticion_ingrediente pulpo)
     (peticion_ingrediente melon)
     (peticion_ingrediente manzana)
-    (ensaladas_por_generar cuatro)
+    (ensaladas_por_generar tres)
     
     (sig_cont cero uno)
     (sig_cont uno dos)
