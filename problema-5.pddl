@@ -20,7 +20,7 @@
     (hecho_paso_ensalada s1 pulpo anyadir tres)
     
     (peticion_ensalada s2)
-    (peticion_pasos_ensalada s2 ocho)
+    (peticion_pasos_ensalada s2 cinco)
     (peticion_ingrediente chorizo)
     (peticion_ingrediente bacalao)
     (peticion_ingrediente pepino)

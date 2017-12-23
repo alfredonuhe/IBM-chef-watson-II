@@ -3,7 +3,7 @@
 (:domain Salads)
 (:objects
 	cortar vertir anyadir rallar - paso
-	s0 s1 s2 s3 s4 s5 - ensalada
+	s0 s1 s2 s3 s4 - ensalada
 	jamon pollo cordero chorizo - carne
 	atun pulpo gambas bacalao - pescado
 	melon manzana fresa aceitunas uva - fruta
@@ -20,13 +20,17 @@
     (hecho_paso_ensalada s1 pulpo anyadir tres)
     
     (peticion_ensalada s2)
-    (peticion_pasos_ensalada s2 cuatro)
+    (peticion_pasos_ensalada s2 dos)
     (peticion_ensalada s3)
-    (peticion_pasos_ensalada s3 cuatro)
-    (peticion_ingrediente jamon)
-    (peticion_ingrediente chorizo)
+    (peticion_pasos_ensalada s3 tres)
+    (peticion_ensalada s4)
+    (peticion_pasos_ensalada s4 cuatro)
     (peticion_ingrediente uva)
-    (ensaladas_por_generar dos)
+    (peticion_ingrediente manzana)
+    (peticion_ingrediente pepino)
+    (peticion_ingrediente calabacin)
+    (peticion_ingrediente trufa)
+    (ensaladas_por_generar tres)
     
     (sig_cont cero uno)
     (sig_cont uno dos)
