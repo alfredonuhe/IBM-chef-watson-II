@@ -11,8 +11,7 @@
           paso
           contador
           ensalada
-          ingrediente 
-          tipo - object)
+          ingrediente - object)
 (:constants cero uno dos tres cuatro cinco seis siete ocho nueve - contador)
 (:predicates
         (hecho_paso_ensalada ?s - ensalada ?i - ingrediente ?p - paso ?orden - contador)
